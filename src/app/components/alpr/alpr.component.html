@@ -1,0 +1,31 @@
+<h3>Images</h3>
+
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
+
+  <div class="grid-item"><img src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car1.jpg" alt=""
+                              (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car1.jpg" )'>
+  </div>
+
+  <div class="grid-item"><img
+    src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car2.jpg" alt=""
+    (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car2.jpg" )'></div>
+
+  <div class="grid-item"><img src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car3.jpg" alt=""
+                              (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car3.jpg" )'>
+  </div>
+
+  <div class="grid-item"><img src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car4.jpg" alt=""
+                              (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car4.jpg" )'>
+  </div>
+
+</div>
+
+
+<h4>Resultado:</h4>
+<ul>
+  <li *ngIf="alprResult">Placas: {{alprResult}}</li>
+  <li *ngIf="vehicleModel">Modelo: {{vehicleModel}}</li>
+  <li *ngIf="vehicleColor">Color: {{vehicleColor}}</li>
+</ul>
+
+
