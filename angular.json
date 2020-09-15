@@ -65,8 +65,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "baseHref" : "/alpr/",
-            "deployUrl": "/alpr/",
+            "baseHref" : "/recognizerFront/",
+            "deployUrl": "/recognizerFront/",
             "browserTarget": "recognizerFront:build"
           },
           "configurations": {
