@@ -1,31 +1,32 @@
 <h3>Images</h3>
-
+<h4>Results:</h4>
+<ul>
+  <li *ngIf="alprResult">Placas: {{alprResult}}</li>
+  <li *ngIf="vehicleModel">Marca: {{vehicleModel}}</li>
+  <li *ngIf="vehicleModel">Modelo: {{vehicleModelTrue}}</li>
+  <li *ngIf="vehicleColor">Color: {{vehicleColor}}</li>
+</ul>
 <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
 
-  <div class="grid-item"><img src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car1.jpg" alt=""
-                              (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car1.jpg" )'>
+  <div class="grid-item"><img src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car1_new.jpg" alt=""
+                              (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car1_new.jpg" )'>
   </div>
 
   <div class="grid-item"><img
-    src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car2.jpg" alt=""
-    (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car2.jpg" )'></div>
+    src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car2_new.jpg" alt=""
+    (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car2_new.jpg" )'></div>
 
-  <div class="grid-item"><img src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car3.jpg" alt=""
-                              (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car3.jpg" )'>
+  <div class="grid-item"><img src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car3_new.jpg" alt=""
+                              (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car3_new.jpg" )'>
   </div>
 
-  <div class="grid-item"><img src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car4.jpg" alt=""
-                              (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car4.jpg" )'>
+  <div class="grid-item"><img src="https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car4_new.jpg" alt=""
+                              (click)='makeRequest("https://res.cloudinary.com/ivandvloper/image/upload/v1600107880/car4_new.jpg" )'>
   </div>
 
 </div>
 
 
-<h4>Results:</h4>
-<ul>
-  <li *ngIf="alprResult">Placas: {{alprResult}}</li>
-  <li *ngIf="vehicleModel">Modelo: {{vehicleModel}}</li>
-  <li *ngIf="vehicleColor">Color: {{vehicleColor}}</li>
-</ul>
+
 
 

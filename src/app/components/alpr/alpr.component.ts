@@ -21,6 +21,7 @@ export class AlprComponent implements OnInit {
   alprResult: String = "";
   vehicleColor: String = "";
   vehicleModel: String = "";
+  vehicleModelTrue: String = "";
 
   makeRequest(imageUrl: String) {
     this._alprController.postToRapidApi(imageUrl).subscribe(next => {
@@ -28,6 +29,7 @@ export class AlprComponent implements OnInit {
         this.alprResult = next.results[0].plate;
         this.vehicleColor = next.results[0].vehicle.color[0].name;
         this.vehicleModel = next.results[0].vehicle.make[0].name;
+        this.vehicleModelTrue = next.results[0].vehicle.make_model[0].name;
       },
       error => {
         console.log(error);

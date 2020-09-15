@@ -24,16 +24,23 @@ body {
 /* ---- grid-item ---- */
 
 .grid-item {
-  width: 200px;
-  height: 150px;
+  width: 400px;
+  height: 200px;
   float: left;
   border-radius: 5px;
-  margin: 5px;
+  padding: 0px;
+  margin: 10px auto;
+background-color: red;
+  align-content: center;
+  align-items: center;
 
 }
 
 .grid-item img {
   width: 100%;
+
+  align-self: center;
+  justify-self: center;
 }
 
 .grid-item--width2 {
