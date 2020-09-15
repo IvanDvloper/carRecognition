@@ -27,7 +27,7 @@ export class AlprComponent implements OnInit {
         console.log(next);
         this.alprResult = next.results[0].plate;
         this.vehicleColor = next.results[0].vehicle.color[0].name;
-        this.vehicleModel = next.results[0].vehicle.make_model[0].name;
+        this.vehicleModel = next.results[0].vehicle.make[0].name;
       },
       error => {
         console.log(error);
