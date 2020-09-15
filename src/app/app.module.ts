@@ -24,7 +24,7 @@ registerPlugin(FilePondPluginFileValidateType);
     RouterModule.forRoot([
       {path: 'alpr', component: AlprComponent},
       {path: 'face', component: FaceComponent},
-    ])
+    ],{useHash : true})
   ],
   providers: [
     AlprController
